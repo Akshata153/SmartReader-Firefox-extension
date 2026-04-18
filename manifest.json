@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Smart Reading Tracker",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Smart Reading Tracker enhances your browsing experience by visually highlighting headings and text content, helping you focus while reading. Non-intrusive visual enhancements that do not modify page structure.",
   "author": "Smart Reading Tracker",
   "homepage_url": "https://github.com/Akshata153/SmartReader-Firefox-extension",
