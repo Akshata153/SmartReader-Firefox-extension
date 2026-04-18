@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Reading Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="header">
+        <img class="logo" src="icon-96.png" alt="Extension logo" />
+        <div>
+          <h1>Smart Reading Tracker</h1>
+          <p class="subtitle">Focus-friendly hover styling</p>
+        </div>
+      </div>
+
+      <div class="status-row">
+        <span class="status-label">Current status</span>
+        <span id="statusBadge" class="status-badge">ON</span>
+      </div>
+
+      <label class="toggle-row" for="enabledToggle">
+        <span class="toggle-text">Enable extension</span>
+        <span class="switch">
+          <input id="enabledToggle" type="checkbox" />
+          <span class="slider" aria-hidden="true"></span>
+        </span>
+      </label>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

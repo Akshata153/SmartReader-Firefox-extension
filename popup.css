@@ -1,0 +1,145 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  width: 290px;
+  background: linear-gradient(135deg, #faf5ff 0%, #fff7ed 100%);
+  color: #1f2937;
+}
+
+.wrap {
+  margin: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 10px 24px rgba(88, 28, 135, 0.12);
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.15;
+  color: #111827;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.subtitle {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.status-row {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-label {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.toggle-row {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.toggle-text {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  width: 44px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  background: #d1d5db;
+  transition: background 0.2s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.switch input:checked + .slider {
+  background: #7c3aed;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.status {
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #166534;
+}
+
+body[data-enabled="false"] .status {
+  color: #991b1b;
+}
+
+body[data-enabled="false"] .status-badge {
+  background: #fee2e2;
+  color: #991b1b;
+}
