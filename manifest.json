@@ -8,7 +8,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "smart-reading-tracker@example.com",
+      "id": "smartreader@akshata153.github.io",
       "strict_min_version": "109.0",
       "update_url": "https://akshata153.github.io/SmartReader-Firefox-extension/updates.json"
     }
