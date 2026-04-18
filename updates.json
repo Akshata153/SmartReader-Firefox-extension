@@ -1,0 +1,17 @@
+{
+  "addons": {
+    "smart-reading-tracker@example.com": {
+      "updates": [
+        {
+          "version": "1.0.2",
+          "update_link": "https://github.com/Akshata153/SmartReader-Firefox-extension/releases/download/v1.0.2/smart-reading-tracker-1.0.2.xpi",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "109.0"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
