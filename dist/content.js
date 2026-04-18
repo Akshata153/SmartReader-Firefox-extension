@@ -20,7 +20,7 @@ const restorePersistentHighlights = () => {
         delete heading.dataset[HIGHLIGHT_ORIGINAL_BG];
         delete heading.dataset[HEADING_HIGHLIGHT_FLAG];
     });
-    const lavenderElements = document.querySelectorAll("p[data-hh-lavender-highlighted], span[data-hh-lavender-highlighted]");
+    const lavenderElements = document.querySelectorAll("p[data-hh-lavender-highlighted], span[data-hh-lavender-highlighted], li[data-hh-lavender-highlighted]");
     lavenderElements.forEach((element) => {
         element.style.backgroundColor =
             element.dataset[HIGHLIGHT_ORIGINAL_BG] ?? "";
@@ -72,7 +72,7 @@ const onMouseOver = (event) => {
         heading.style.backgroundColor = WINE_COLOR;
         heading.style.color = WHITISH_GREY_COLOR;
     }
-    const lavenderTag = target.closest("p, span");
+    const lavenderTag = target.closest("p, span, li");
     if (lavenderTag && !lavenderTag.closest(HEADING_SELECTOR)) {
         if (!lavenderTag.dataset[LAVENDER_HIGHLIGHT_FLAG]) {
             lavenderTag.dataset[HIGHLIGHT_ORIGINAL_BG] =

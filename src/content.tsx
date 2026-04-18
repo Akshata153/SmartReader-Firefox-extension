@@ -31,7 +31,7 @@ const restorePersistentHighlights = (): void => {
   });
 
   const lavenderElements = document.querySelectorAll<HTMLElement>(
-    "p[data-hh-lavender-highlighted], span[data-hh-lavender-highlighted]",
+    "p[data-hh-lavender-highlighted], span[data-hh-lavender-highlighted], li[data-hh-lavender-highlighted]",
   );
   lavenderElements.forEach((element) => {
     element.style.backgroundColor =
@@ -89,7 +89,7 @@ const onMouseOver = (event: MouseEvent): void => {
     heading.style.color = WHITISH_GREY_COLOR;
   }
 
-  const lavenderTag = target.closest("p, span") as HTMLElement | null;
+  const lavenderTag = target.closest("p, span, li") as HTMLElement | null;
   if (lavenderTag && !lavenderTag.closest(HEADING_SELECTOR)) {
     if (!lavenderTag.dataset[LAVENDER_HIGHLIGHT_FLAG]) {
       lavenderTag.dataset[HIGHLIGHT_ORIGINAL_BG] =
