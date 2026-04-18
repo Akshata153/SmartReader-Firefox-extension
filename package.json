@@ -1,7 +1,16 @@
 {
-  "name": "highlighter-extension",
-  "version": "1.0.0",
+  "name": "smart-reader-firefox-extension",
+  "version": "1.0.2",
+  "description": "Smart Reading Tracker Firefox extension",
   "private": true,
+  "homepage": "https://github.com/Akshata153/SmartReader-Firefox-extension",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshata153/SmartReader-Firefox-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Akshata153/SmartReader-Firefox-extension/issues"
+  },
   "scripts": {
     "build": "tsc"
   },
