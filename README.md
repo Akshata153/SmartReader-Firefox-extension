@@ -19,6 +19,9 @@ Smart Reading Tracker enhances your browsing experience by visually highlighting
 👉 Download the latest version here:
 https://github.com/Akshata153/SmartReader-Firefox-extension/releases/latest
 
+Or directly download .xpi file:
+https://github.com/Akshata153/SmartReader-Firefox-extension/releases/download/v1.0.0/smart-reading-tracker-1.0.0.xpi
+
 ---
 
 ## 🛠️ Installation (Firefox)
